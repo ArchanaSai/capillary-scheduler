@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 
-const CardList = ({articleList}) => {
+const CardList = ({articleList,onRouteChange}) => {
     return(
         <div className="flex">
             {
@@ -13,7 +13,8 @@ const CardList = ({articleList}) => {
                                 title={articleList[id].title} 
                                 data={articleList[id].data}
                                 image={articleList[id].imageURL}
-                                routeName={articleList[id].route}>
+                                routeName={articleList[id].routeName}
+                                onRouteChange={onRouteChange}>
                             </Card>
                         
                     );

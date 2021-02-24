@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Card = ({title,data,routeName,image}) => {
+const Card = ({title,data,routeName,image,onRouteChange}) => {
     return(
-        <article className="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 grow shadow-5">
+        <article className="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 grow shadow-5" onClick={()=>{onRouteChange(routeName)}}>
             <div className="tc">
                 <img src={image} className="br-100 h3 w3 dib" alt=""/>
                 <h1 className="f4 dark-gray">{title}</h1>

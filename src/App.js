@@ -29,7 +29,6 @@ function App() {
       <Particles className="particles" params={particlesOptions}/>
       <Navigation onRouteChange={onRouteChange}/>
       { 
-        console.log(route), 
         (route === 'hydration') ?
           <div>
             <TitleAndDescription id={hydration.componentID} title={hydration.title} data={hydration.data}/>
@@ -44,15 +43,15 @@ function App() {
           </div> :
         (route === 'contact') ?
           <div>
-            <img id="hairImage" src={hair}/>
+            <img className="measure-width center f5 f4-ns lh-copy" id="hairImage" src={hair} alt="a girl with long hair"/>
             <Comments componentID="commentsPanel"/>
           </div> :
           <div>
-            <img className="measure-width center f5 f4-ns lh-copy" id="hairImage" src={hair}/>
+            <img className="measure-width center f5 f4-ns lh-copy" id="hairImage" src={hair} alt="a girl with long hair"/>
             <TitleAndDescription id={about.componentID} title={about.title} data={about.data}/>
             <TitleAndDescription id={what.componentID} title={what.title} data={what.data}/>
             <TitleAndDescription id={working.componentID} title={working.title} data={working.data}/>
-            <TitleAndDescriptionWithCard id={benefits.componentID} title={benefits.title} data={benefits.data} articleList={benefits.articleList}/>
+            <TitleAndDescriptionWithCard id={benefits.componentID} title={benefits.title} data={benefits.data} articleList={benefits.articleList} onRouteChange={onRouteChange}/>
           </div>
       }  
     </div>

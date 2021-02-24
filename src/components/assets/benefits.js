@@ -11,7 +11,7 @@ const benefits = {
             id: 1,
             title: 'Hydration',
             data: `It combats the opacity of the threads, thus making them brighter and softer. So it avoids split ends and hair loss.`,
-            imageURL: 'https://github.com/ArchanaSai/capillary-scheduler/blob/main/src/components/assets/images/jug.png',
+            imageURL: 'https://github.com/ArchanaSai/capillary-scheduler/blob/main/src/components/assets/images/jug.png?raw=true',
             routeName: 'hydration'
         },
         {
@@ -19,7 +19,7 @@ const benefits = {
             title: 'Nutrition',
             data: `It reduces frizz, provides life and movement. Above all, it leaves the hair healthier and fuller. 
                    It also seals the cuticles and prolongs the effects of hair hydration.`,
-            imageURL: 'https://github.com/ArchanaSai/capillary-scheduler/blob/main/src/components/assets/images/drops.jpg',
+            imageURL: 'https://github.com/ArchanaSai/capillary-scheduler/blob/main/src/components/assets/images/drops.jpg?raw=true',
             routeName: 'nutrition'
         },
         {
@@ -27,7 +27,7 @@ const benefits = {
             title: 'Reconstruction',
             data: `It will recover your hair’s health because it restores the damage, and, as the name says, 
                    it reconstructs the hair fiber, returning the hair texture.`,
-            imageURL: 'https://github.com/ArchanaSai/capillary-scheduler/blob/main/src/components/assets/images/chemistry.jpg',
+            imageURL: 'https://github.com/ArchanaSai/capillary-scheduler/blob/main/src/components/assets/images/chemistry.jpg?raw=true',
             routeName: 'reconstruction'
         }
     ]
