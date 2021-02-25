@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <Particles className="particles" params={particlesOptions}/>
-      <Navigation onRouteChange={onRouteChange}/>
+      <Navigation className="navigation" onRouteChange={onRouteChange}/>
       { 
         (route === 'hydration') ?
           <div>

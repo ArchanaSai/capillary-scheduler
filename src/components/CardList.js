@@ -3,7 +3,7 @@ import Card from './Card'
 
 const CardList = ({articleList,onRouteChange}) => {
     return(
-        <div className="flex">
+        <div className="flex flex-wrap">
             {
                 articleList.map((article,id) => {
                     return(

@@ -4,7 +4,7 @@ import logo from './logo.jpg'
 const Navigation = ({onRouteChange}) => {
     return (
         <div>
-            <nav class="db dt-l fixed w-100 border-box pa3 ph5-l bg-white">
+            <nav class="db dt-l w-100 border-box pa3 ph5-l bg-white row">
                 <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" onClick={() => {onRouteChange("home")}} href="#hairImage" title="Home">
                     <img src={logo} class="dib w2 h2 br-100" alt="Logo"/>
                 </a>
